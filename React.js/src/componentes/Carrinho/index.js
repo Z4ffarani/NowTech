@@ -21,15 +21,7 @@ const FundoMostruario = styled.div`
     justify-content: center;
     background-color: #040d23;
     flex-wrap: wrap; 
-    width: 100%; 
-    padding: 0px 20px; 
-`
-const FundoSite = styled.div`
-    background-color: #040d23;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    width: 100%;
 `
 const Produto = styled.div`
     display: flex;
@@ -44,11 +36,15 @@ const Imagem = styled.img`
     width: 300px;
     height: 300px;
     border-radius: 10px;
+    transition: 500ms ease;
+    &:hover {
+        scale: 108%;
+    }
 `
 const Titulo = styled.h1`
     color: white;
     font-weight: 600;
-    margin: 5px 0px;
+    margin: 20px 0px 0px 0px;
     text-align: center;
 `
 const Preco = styled.p`
@@ -60,9 +56,11 @@ const Preco = styled.p`
 `
 const TituloArea = styled.p`
     color: white;
-    padding: 20px 40px;
-    font-weight: 500;
-    font-size: 1.4rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: italic;
     margin: 0;
     user-select: none;
 `
@@ -135,20 +133,18 @@ function Carrinho() {
     return (
         <>
         <GlobalStyle />
-            <FundoSite>
-                <TituloArea>MEU CARRINHO</TituloArea>
-                <FundoMostruario>
-                    {produtosCarrinho.map((produto) => (
-                        <Produto key={produto.id}>
-                            <Imagem src={produto.imagem} alt={produto.nome} />
-                            <Titulo>{produto.nome}</Titulo>
-                            <Preco>{produto.preco}</Preco>
-                            <AdquirirProduto onClick={() => comprarProduto(produto.id)}>Comprar</AdquirirProduto>
-                            <RemoverCarrinho onClick={() => tirarDoCarrinho(produto.id)}>Remover do carrinho</RemoverCarrinho>
-                        </Produto>
-                    ))}
-                </FundoMostruario>
-            </FundoSite>
+            <TituloArea>MEU CARRINHO</TituloArea>
+            <FundoMostruario>
+                {produtosCarrinho.map((produto) => (
+                    <Produto key={produto.id}>
+                        <Imagem src={produto.imagem} alt={produto.nome} />
+                        <Titulo>{produto.nome}</Titulo>
+                        <Preco>{produto.preco}</Preco>
+                        <AdquirirProduto onClick={() => comprarProduto(produto.id)}>Comprar</AdquirirProduto>
+                        <RemoverCarrinho onClick={() => tirarDoCarrinho(produto.id)}>Remover do carrinho</RemoverCarrinho>
+                    </Produto>
+                ))}
+            </FundoMostruario>
             <Comprados key={produtosComprados} />
         </>
     )
