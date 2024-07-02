@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "Headset",
+        "preco": "R$200,00",
+        "imagem": "http://localhost:8000/imagens/headset.jpg"
+    },
+    {
+        "id": "2",
+        "nome": "Monitor",
+        "preco": "R$800,00",
+        "imagem": "http://localhost:8000/imagens/monitor.jpg"
+    },
+    {
+        "id": "3",
+        "nome": "Mouse",
+        "preco": "R$150,00",
+        "imagem": "http://localhost:8000/imagens/mouse.jpg"
+    },
+    {
+        "id": "4",
+        "nome": "PC (CPU)",
+        "preco": "R$1.000,00",
+        "imagem": "http://localhost:8000/imagens/pc.jpg"
+    },
+    {
+        "id": "5",
+        "nome": "Teclado",
+        "preco": "R$180,00",
+        "imagem": "http://localhost:8000/imagens/teclado.jpg"
+    }
+]
