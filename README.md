@@ -43,7 +43,7 @@ Executar o código **nodemon app.js** para inicar o servidor Back-End. Ele opera
 
 
 # OBSERVAÇÕES
-Caso executou o código antes da instalação no terminal, utilizar o atalho **Ctrl + C** para cancelar a operação.
+Caso os códigos de inicialização forem executados no termminal antes das instalações orientadas, utilizar o atalho **Ctrl + C** para cancelar a operação. Este atalho é aplicado universalmente.
 
 Os servidores estão configurados para funcionar em uma rede local, permitindo o acesso a partir de qualquer origem devido às configurações gerais de [**CORS**](<https://aws.amazon.com/pt/what-is/cross-origin-resource-sharing/#:~:text=Cross-origin%20resource%20sharing%20(CORS,resources%20in%20a%20different%20domain.>).
   
