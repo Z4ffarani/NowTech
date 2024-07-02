@@ -10,8 +10,9 @@ const Fundo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
     padding: 40px;
+    margin-bottom: 10px;
 `
 const Titulo = styled.h1`
     color: white;

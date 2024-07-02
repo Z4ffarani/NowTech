@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 html, body {
-    margin: 0;
+    margin: 0px;
     background-color: #040d23;
 }
 `
@@ -20,14 +20,7 @@ const FundoMostruario = styled.div`
     background-color: #040d23;
     flex-wrap: wrap; 
     width: 100%;
-    padding: 0px 20px; 
-`
-const FundoSite = styled.div`
-    background-color: #040d23;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0px 0px 20px 0px; 
 `
 const Produto = styled.div`
   display: flex;
@@ -57,8 +50,10 @@ const Titulo = styled.h1`
 const TituloArea = styled.p`
     color: white;
     padding: 20px 40px;
-    font-weight: 500;
-    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: italic;
     margin: 0;
     user-select: none;
 `
@@ -98,19 +93,17 @@ function Catalogo() {
     return (
         <>
         <GlobalStyle />
-            <FundoSite>
-                <TituloArea>PRODUTOS</TituloArea>
-                <FundoMostruario>
-                    {produtos.map((produto) => (
-                        <Produto key={produto.id}>
-                            <Imagem src={produto.imagem} alt={produto.nome} />
-                            <Titulo>{produto.nome}</Titulo>
-                            <AddCarrinho onClick={() => adicionarAoCarrinho(produto.id)}>Adicionar ao carrinho</AddCarrinho>
-                        </Produto>
-                    ))}
-                </FundoMostruario>
-            </FundoSite> 
-            <Comprados />
+            <TituloArea>PRODUTOS</TituloArea>
+            <FundoMostruario>
+                {produtos.map((produto) => (
+                    <Produto key={produto.id}>
+                        <Imagem src={produto.imagem} alt={produto.nome} />
+                        <Titulo>{produto.nome}</Titulo>
+                        <AddCarrinho onClick={() => adicionarAoCarrinho(produto.id)}>Adicionar ao carrinho</AddCarrinho>
+                    </Produto>
+                ))}
+            </FundoMostruario>
+        <Comprados />
         </>
     )
 }

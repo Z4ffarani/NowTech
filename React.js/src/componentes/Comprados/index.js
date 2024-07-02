@@ -7,8 +7,12 @@ const Fundo = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 40px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 `
 const Titulo = styled.h1`
     color: white;
@@ -17,7 +21,7 @@ const Titulo = styled.h1`
     user-select: none;
     transition: 200ms ease;
     &:hover {
-        text-shadow: 0px 0px 20px blue;
+        color: green;
     }
 `
 const MostruarioComprados = styled.div`
@@ -31,8 +35,7 @@ const ImagemProduto = styled.img`
     border: solid blue 3px;
     border-radius: 10px;
     margin: 0px 15px;
-    padding: 0px;
-    transition: 200ms ease;
+    transition: 250ms ease;
     &:hover {
         scale: 110%;
         box-shadow: 0px 0px 20px blue; 
@@ -65,7 +68,7 @@ function Comprados() {
 
     return (
         <Fundo>
-            <Titulo>ITENS COMPRADOS</Titulo>
+            <Titulo>ITENS COMPRADOS:</Titulo>
             <MostruarioComprados>
                 {produtosComprados.map((produto) => (
                     <BotaoReembolsar key={produto.id} onClick={() => reembolsarComprado(produto.id)}><ImagemProduto src={produto.imagem} alt={produto.nome}/></BotaoReembolsar>
