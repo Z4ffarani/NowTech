@@ -1,6 +1,4 @@
 # DETALHES DO PROJETO
-Criado por **Z4ffarani**.
-
 - Interface de loja de periféricos virtual fictícia desenvolvida com **React.js** e **Node.js**.
 - Front-End elaborado com componentes **React.js** e suas bibliotecas.
 - Back-End estruturado com **Express.js** (biblioteca do **Node.js**), para fornecer rotas de API, utlizar métodos HTTP e manipular objetos **JSON** para o Front-End.
