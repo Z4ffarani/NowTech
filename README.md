@@ -1,7 +1,7 @@
 # DETALHES DO PROJETO
 - Interface de loja de periféricos virtual fictícia desenvolvida com **React.js** e **Node.js**.
 - Front-End elaborado com componentes **React.js** e suas bibliotecas.
-- Back-End estruturado com **Express.js** (biblioteca do **Node.js**), para fornecer rotas de API, utlizar métodos HTTP e manipular objetos **JSON** para o Front-End.
+- Back-End estruturado com **Express.js** (biblioteca do **Node.js**), para fornecer rotas de API, utilizar métodos HTTP e manipular objetos **JSON** para o Front-End.
 
 
 
@@ -41,7 +41,7 @@ Executar o código **nodemon app.js** para inicar o servidor Back-End. Ele opera
 
 
 # OBSERVAÇÕES
-Caso os códigos de inicialização forem executados no termminal antes das instalações orientadas, utilizar o atalho **Ctrl + C** para cancelar a operação. Este atalho é aplicado universalmente.
+Caso os códigos de inicialização forem executados no terminal antes das instalações orientadas, utilizar o atalho **Ctrl + C** para cancelar a operação.
 
 Os servidores estão configurados para funcionar em uma rede local, permitindo o acesso a partir de qualquer origem devido às configurações gerais de [**CORS**](<https://aws.amazon.com/pt/what-is/cross-origin-resource-sharing/#:~:text=Cross-origin%20resource%20sharing%20(CORS,resources%20in%20a%20different%20domain.>).
   
