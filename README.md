@@ -1,7 +1,7 @@
 # DETALHES DO PROJETO
 - Interface de loja de periféricos virtual fictícia desenvolvida com **React.js** e **Node.js**.
-- Front-End elaborado com componentes **React.js** e suas bibliotecas.
-- Back-End estruturado com **Express.js** (biblioteca do **Node.js**), para fornecer rotas de API, utilizar métodos HTTP e manipular objetos **JSON** para o Front-End.
+- Front-end elaborado com componentes **React.js** e suas bibliotecas.
+- Back-end estruturado com **Express.js** (biblioteca do **Node.js**), para fornecer rotas de API, utilizar métodos HTTP e manipular objetos JSON (notação de objetos JavaScript) para o front-end.
 
 
 
@@ -25,7 +25,7 @@ Após clonar o repositório, em um novo terminal, executar respectivamente os c�
 
 - **INICIAR SERVIDOR DE DESENVOLVIMENTO:**
 
-Para visualizar o site, executar o código **npm start** para inicar o servidor Front-End. Haverá um redirecionamento para a URL **http://localhost:3000**. O servidor suporta hot-reloading, refletindo qualquer mudança no código instantaneamente no navegador.
+Para visualizar o site, executar o código **npm start** para inicar o servidor front-end. Haverá um redirecionamento para a URL **http://localhost:3000**. O servidor suporta hot-reloading, refletindo qualquer mudança no código instantaneamente no navegador.
 
 
 ### Node.js
@@ -36,7 +36,7 @@ No terminal, executar respectivamente os códigos **cd PORTFOLIO-NOWTECH** (se n
 
 - **INICIAR SERVIDOR DE DESENVOLVIMENTO:**
   
-Executar o código **nodemon app.js** para inicar o servidor Back-End. Ele operará na URL **http://localhost:8000**.
+Executar o código **nodemon app.js** para inicar o servidor back-end. Ele operará na URL **http://localhost:8000**.
 
 
 
@@ -45,4 +45,4 @@ Caso os códigos de inicialização forem executados no terminal antes das insta
 
 Os servidores estão configurados para funcionar em uma rede local, permitindo o acesso a partir de qualquer origem devido às configurações gerais de [**CORS**](<https://aws.amazon.com/pt/what-is/cross-origin-resource-sharing/#:~:text=Cross-origin%20resource%20sharing%20(CORS,resources%20in%20a%20different%20domain.>).
   
-É possível navegar pelos objetos **JSON** armazenados digitando **/home**, **/carrinho** ou **/comprados** depois da URL do servidor Back-End.
+É possível navegar pelos objetos JSON armazenados digitando **/home**, **/carrinho** ou **/comprados** depois da URL do servidor back-end.
