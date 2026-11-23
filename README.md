@@ -1,4 +1,4 @@
-# NowTech
+![NowTech](./assets/banner.png)
 
 **[Publicação](https://www.linkedin.com/posts/kaique-zaffarani_reactjs-nodejs-frontend-activity-7214116795673161728-cx3e)**
 
